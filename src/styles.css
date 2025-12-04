@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glass morphism utility */
+.glass {
+  background: radial-gradient(100% 100% at 0% 0%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%),
+              linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.06) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  border-radius: 16px;
+}
+
+/* Card hover */
+.card-hover {
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+  border-color: rgba(255,255,255,0.20);
+}
+
+/* Nice readable font-size for explanation */
+.expl-text {
+  font-size: 0.975rem;
+  line-height: 1.75;
+  color: #dbeafe; /* light blue text for readability */
+}
